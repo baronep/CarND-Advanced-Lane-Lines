@@ -59,9 +59,11 @@ First, the camera calibration generated in the previous section was applied to t
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
-In order to identify the lane lines, a binary image was generated with the goal of having only the lane lines. Many different combinations of threhsold, color spaces and sobel filters were attempted but the final configuration can be found in first first section of the process() function.
+In order to identify the lane lines, a binary image was generated with the goal of having only the lane lines. Many different combinations of threhsolds, color spaces and sobel filters were attempted but the final configuration can be found in first first section of the process() function.
 
-The final thresholding that I used was: (HLS_L_threshold AND HLS_S_threshold) OR (SOBEL_ABS_threshold AND SOBEL_DIR_thresold)
+The final thresholding that I used was: 
+
+(HLS_L_threshold AND HLS_S_threshold) OR (SOBEL_ABS_threshold AND SOBEL_DIR_thresold)
 
 <img src="output_images/binary.jpg" width="800"/>
 
