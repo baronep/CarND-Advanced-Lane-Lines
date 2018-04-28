@@ -55,7 +55,7 @@ The OpenCV algorithm was unable to identify the corners in all of the images. In
 
 First, the camera calibration generated in the previous section was applied to the raw camera image.
 
-<img src="test_images/test1.jpg" width="400"/> <img src="output_images/undist.jpg" width="400"/>
+<figure><img src="test_images/test1.jpg" width="400"/><figcaption>Raw Image</figcaption></figure><figure><img src="output_images/undist.jpg" width="400"/><figcaption>Undistorted Image</figcaption></figure>
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
