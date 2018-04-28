@@ -15,8 +15,9 @@ import matplotlib.pyplot as plt
 
 ### User configuration parameters ###
 input_image_path = './camera_cal'
-annotated_image_path = './output_camera_calibration'
+annotated_image_path = './output_calibration_images'
 annotated_image_prefix = 'annotated_'
+test_image_path = './camera_cal/calibration1.jpg'
 #####################################
 
 def process_image(path, w, h):
@@ -75,3 +76,9 @@ if __name__ == '__main__':
             'tvecs': tvecs
             }
     pickle.dump(calibration, open('camera_calibration.p', 'wb'))
+
+    # Generate verification image
+    test_img = cv2.imread(test_image_path)
+    undist = cv2.undistort(test_img, mtx, dist, None, mtx)
+    path = os.path.join(annotated_image_path, 'dewarped.jpg')
+    cv2.imwrite(path, undist)
