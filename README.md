@@ -105,13 +105,13 @@ After performing the perspective transform, a sliding window approach was used a
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
-I did this in lines # through # in my code in `my_other_file.py`
+The lane position and radius of curvature were calculated in the functions calc_lane_position() and calc_radius_of_curvature() functions respectively. For both of these functions, I used the methods described in section 15.35 of the lecture.
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
-I implemented this step in lines # through # in my code in `yet_another_file.py` in the function `map_lane()`.  Here is an example of my result on a test image:
+Finally, the lane lines were then plotted on the original image, in addition to the lane position and curvature. In order to accomplish this, the lane lines were plotted on a blank image and then trasnformed using the inverse perspective trasnform back into the cameras frame of reference. Finally this image was overlayed on top of the original image.
 
-![alt text][image6]
+<img src="output_images/final_annotated_image.jpg" width="800"/>
 
 ---
 
