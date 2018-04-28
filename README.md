@@ -1,9 +1,3 @@
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
----
-
 **Advanced Lane Finding Project**
 
 The goals / steps of this project are the following:
@@ -27,6 +21,27 @@ The goals / steps of this project are the following:
 [image6]: ./examples/example_output.jpg "Output"
 [video1]: ./project_video.mp4 "Video"
 
+[calib1]: ./output_calibration_images/annotated_calibration1.jpg'
+[calib2]: ./output_calibration_images/annotated_calibration2.jpg'
+[calib3]: ./output_calibration_images/annotated_calibration3.jpg'
+[calib4]: ./output_calibration_images/annotated_calibration4.jpg'
+[calib5]: ./output_calibration_images/annotated_calibration5.jpg'
+[calib6]: ./output_calibration_images/annotated_calibration6.jpg'
+[calib7]: ./output_calibration_images/annotated_calibration7.jpg'
+[calib8]: ./output_calibration_images/annotated_calibration8.jpg'
+[calib9]: ./output_calibration_images/annotated_calibration9.jpg'
+[calib10]: ./output_calibration_images/annotated_calibration10.jpg'
+[calib11]: ./output_calibration_images/annotated_calibration11.jpg'
+[calib12]: ./output_calibration_images/annotated_calibration12.jpg'
+[calib13]: ./output_calibration_images/annotated_calibration13.jpg'
+[calib14]: ./output_calibration_images/annotated_calibration14.jpg'
+[calib15]: ./output_calibration_images/annotated_calibration15.jpg'
+[calib16]: ./output_calibration_images/annotated_calibration16.jpg'
+[calib17]: ./output_calibration_images/annotated_calibration17.jpg'
+[calib18]: ./output_calibration_images/annotated_calibration18.jpg'
+[calib19]: ./output_calibration_images/annotated_calibration19.jpg'
+[calib20]: ./output_calibration_images/annotated_calibration20.jpg'
+
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -43,13 +58,28 @@ You're reading it!
 
 #### 1. Briefly state how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image.
 
-The code for this step is contained in the first code cell of the IPython notebook located in "./examples/example.ipynb" (or in lines # through # of the file called `some_file.py`).  
+While most the code for the project is in the iPython notebook PipelineJupyter.ipynb, the code for computing the camera calibration is in the python script calibrate_camera.py. This script loads all of the supplied camera calibration images, identifies the corners of the checkerboard images, generates a camera calibration and saves this calibration to camera_calibration.p which is subsequently loaded by the main iPython routine (to avoid continuously recalculating the calibration). 
+![alt_text][calib1]
+![alt_text][calib2]
+![alt_text][calib3]
+![alt_text][calib4]
+![alt_text][calib5]
+![alt_text][calib6]
+![alt_text][calib7]
+![alt_text][calib8]
+![alt_text][calib9]
+![alt_text][calib10]
+![alt_text][calib11]
+![alt_text][calib12]
+![alt_text][calib13]
+![alt_text][calib14]
+![alt_text][calib15]
+![alt_text][calib16]
+![alt_text][calib17]
+![alt_text][calib18]
+![alt_text][calib19]
+![alt_text][calib20]
 
-I start by preparing "object points", which will be the (x, y, z) coordinates of the chessboard corners in the world. Here I am assuming the chessboard is fixed on the (x, y) plane at z=0, such that the object points are the same for each calibration image.  Thus, `objp` is just a replicated array of coordinates, and `objpoints` will be appended with a copy of it every time I successfully detect all chessboard corners in a test image.  `imgpoints` will be appended with the (x, y) pixel position of each of the corners in the image plane with each successful chessboard detection.  
-
-I then used the output `objpoints` and `imgpoints` to compute the camera calibration and distortion coefficients using the `cv2.calibrateCamera()` function.  I applied this distortion correction to the test image using the `cv2.undistort()` function and obtained this result: 
-
-![alt text][image1]
 
 ### Pipeline (single images)
 
