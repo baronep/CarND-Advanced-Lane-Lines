@@ -99,9 +99,9 @@ I verified that my perspective transform was working as expected by drawing the 
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
-Then I did some other stuff and fit my lane lines with a 2nd order polynomial kinda like this:
+After performing the perspective transform, a sliding window approach was used as discussed in the lectures to identify the lane lines (find_lanes()). After the first set of lane lines were identified, the find_lanes_give_prev() function was used, which for lane lines only around the previously idenfitied lane models. Additionally, the lane line model coefficeints were low_pass filtered to stabilize the estimates.
 
-![alt text][image5]
+<img src="output_images/sliding_window.jpg" width="800"/>
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
