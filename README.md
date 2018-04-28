@@ -21,26 +21,26 @@ The goals / steps of this project are the following:
 [image6]: ./examples/example_output.jpg "Output"
 [video1]: ./project_video.mp4 "Video"
 
-[calib1]: ./output_calibration_images/annotated_calibration1.jpg'
-[calib2]: ./output_calibration_images/annotated_calibration2.jpg'
-[calib3]: ./output_calibration_images/annotated_calibration3.jpg'
-[calib4]: ./output_calibration_images/annotated_calibration4.jpg'
-[calib5]: ./output_calibration_images/annotated_calibration5.jpg'
-[calib6]: ./output_calibration_images/annotated_calibration6.jpg'
-[calib7]: ./output_calibration_images/annotated_calibration7.jpg'
-[calib8]: ./output_calibration_images/annotated_calibration8.jpg'
-[calib9]: ./output_calibration_images/annotated_calibration9.jpg'
-[calib10]: ./output_calibration_images/annotated_calibration10.jpg'
-[calib11]: ./output_calibration_images/annotated_calibration11.jpg'
-[calib12]: ./output_calibration_images/annotated_calibration12.jpg'
-[calib13]: ./output_calibration_images/annotated_calibration13.jpg'
-[calib14]: ./output_calibration_images/annotated_calibration14.jpg'
-[calib15]: ./output_calibration_images/annotated_calibration15.jpg'
-[calib16]: ./output_calibration_images/annotated_calibration16.jpg'
-[calib17]: ./output_calibration_images/annotated_calibration17.jpg'
-[calib18]: ./output_calibration_images/annotated_calibration18.jpg'
-[calib19]: ./output_calibration_images/annotated_calibration19.jpg'
-[calib20]: ./output_calibration_images/annotated_calibration20.jpg'
+[calib1]: ./output_calibration_images/annotated_calibration1.jpg
+[calib2]: ./output_calibration_images/annotated_calibration2.jpg
+[calib3]: ./output_calibration_images/annotated_calibration3.jpg
+[calib4]: ./output_calibration_images/annotated_calibration4.jpg
+[calib5]: ./output_calibration_images/annotated_calibration5.jpg
+[calib6]: ./output_calibration_images/annotated_calibration6.jpg
+[calib7]: ./output_calibration_images/annotated_calibration7.jpg
+[calib8]: ./output_calibration_images/annotated_calibration8.jpg
+[calib9]: ./output_calibration_images/annotated_calibration9.jpg
+[calib10]: ./output_calibration_images/annotated_calibration10.jpg
+[calib11]: ./output_calibration_images/annotated_calibration11.jpg
+[calib12]: ./output_calibration_images/annotated_calibration12.jpg
+[calib13]: ./output_calibration_images/annotated_calibration13.jpg
+[calib14]: ./output_calibration_images/annotated_calibration14.jpg
+[calib15]: ./output_calibration_images/annotated_calibration15.jpg
+[calib16]: ./output_calibration_images/annotated_calibration16.jpg
+[calib17]: ./output_calibration_images/annotated_calibration17.jpg
+[calib18]: ./output_calibration_images/annotated_calibration18.jpg
+[calib19]: ./output_calibration_images/annotated_calibration19.jpg
+[calib20]: ./output_calibration_images/annotated_calibration20.jpg
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
@@ -59,27 +59,16 @@ You're reading it!
 #### 1. Briefly state how you computed the camera matrix and distortion coefficients. Provide an example of a distortion corrected calibration image.
 
 While most the code for the project is in the iPython notebook PipelineJupyter.ipynb, the code for computing the camera calibration is in the python script calibrate_camera.py. This script loads all of the supplied camera calibration images, identifies the corners of the checkerboard images, generates a camera calibration and saves this calibration to camera_calibration.p which is subsequently loaded by the main iPython routine (to avoid continuously recalculating the calibration). 
-![alt_text][calib1]
-![alt_text][calib2]
-![alt_text][calib3]
-![alt_text][calib4]
-![alt_text][calib5]
-![alt_text][calib6]
-![alt_text][calib7]
-![alt_text][calib8]
-![alt_text][calib9]
-![alt_text][calib10]
-![alt_text][calib11]
-![alt_text][calib12]
-![alt_text][calib13]
-![alt_text][calib14]
-![alt_text][calib15]
-![alt_text][calib16]
-![alt_text][calib17]
-![alt_text][calib18]
-![alt_text][calib19]
-![alt_text][calib20]
 
+<img src="output_calibration_images/annotated_calibration1.jpg" width="200"/> <img src="output_calibration_images/annotated_calibration2.jpg" width="200"/> <img src="output_calibration_images/annotated_calibration3.jpg" width="200"/> <img src="output_calibration_images/annotated_calibration4.jpg" width="200"/>
+<img src="output_calibration_images/annotated_calibration5.jpg" width="200"/> <img src="output_calibration_images/annotated_calibration6.jpg" width="200"/> <img src="output_calibration_images/annotated_calibration7.jpg" width="200"/> <img src="output_calibration_images/annotated_calibration8.jpg" width="200"/>
+<img src="output_calibration_images/annotated_calibration9.jpg" width="200"/> <img src="output_calibration_images/annotated_calibration10.jpg" width="200"/> <img src="output_calibration_images/annotated_calibration11.jpg" width="200"/> <img src="output_calibration_images/annotated_calibration12.jpg" width="200"/>
+<img src="output_calibration_images/annotated_calibration13.jpg" width="200"/> <img src="output_calibration_images/annotated_calibration14.jpg" width="200"/> <img src="output_calibration_images/annotated_calibration15.jpg" width="200"/> <img src="output_calibration_images/annotated_calibration16.jpg" width="200"/>
+<img src="output_calibration_images/annotated_calibration17.jpg" width="200"/> <img src="output_calibration_images/annotated_calibration18.jpg" width="200"/> <img src="output_calibration_images/annotated_calibration19.jpg" width="200"/> <img src="output_calibration_images/annotated_calibration20.jpg" width="200"/>
+
+The OpenCV algorithm was unable to identify the corners in all of the images. In this case, the image was simply not used in the calibration. A sample dewarped image is shown below.
+
+<img src="output_calibration_images/annotated_calibration1.jpg" width="400"/> <img src="output_calibration_images/dewarped_calibration1.jpg" width="400"/>
 
 ### Pipeline (single images)
 
