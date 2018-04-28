@@ -47,7 +47,7 @@ While most the code for the project is in the iPython notebook PipelineJupyter.i
 
 The OpenCV algorithm was unable to identify the corners in all of the images. In this case, the image was simply not used in the calibration. A sample dewarped image is shown below.
 
-<img src="output_calibration_images/annotated_calibration1.jpg" width="400"/> <img src="output_calibration_images/dewarped_calibration1.jpg" width="400"/>
+<img src="output_calibration_images/annotated_calibration1.jpg" width="400"/> <img src="output_calibration_images/dewarped.jpg" width="400"/>
 
 ### Pipeline (single images)
 
