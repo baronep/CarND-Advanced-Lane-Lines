@@ -21,27 +21,6 @@ The goals / steps of this project are the following:
 [image6]: ./examples/example_output.jpg "Output"
 [video1]: ./project_video.mp4 "Video"
 
-[calib1]: ./output_calibration_images/annotated_calibration1.jpg
-[calib2]: ./output_calibration_images/annotated_calibration2.jpg
-[calib3]: ./output_calibration_images/annotated_calibration3.jpg
-[calib4]: ./output_calibration_images/annotated_calibration4.jpg
-[calib5]: ./output_calibration_images/annotated_calibration5.jpg
-[calib6]: ./output_calibration_images/annotated_calibration6.jpg
-[calib7]: ./output_calibration_images/annotated_calibration7.jpg
-[calib8]: ./output_calibration_images/annotated_calibration8.jpg
-[calib9]: ./output_calibration_images/annotated_calibration9.jpg
-[calib10]: ./output_calibration_images/annotated_calibration10.jpg
-[calib11]: ./output_calibration_images/annotated_calibration11.jpg
-[calib12]: ./output_calibration_images/annotated_calibration12.jpg
-[calib13]: ./output_calibration_images/annotated_calibration13.jpg
-[calib14]: ./output_calibration_images/annotated_calibration14.jpg
-[calib15]: ./output_calibration_images/annotated_calibration15.jpg
-[calib16]: ./output_calibration_images/annotated_calibration16.jpg
-[calib17]: ./output_calibration_images/annotated_calibration17.jpg
-[calib18]: ./output_calibration_images/annotated_calibration18.jpg
-[calib19]: ./output_calibration_images/annotated_calibration19.jpg
-[calib20]: ./output_calibration_images/annotated_calibration20.jpg
-
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
