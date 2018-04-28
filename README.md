@@ -53,8 +53,9 @@ The OpenCV algorithm was unable to identify the corners in all of the images. In
 
 #### 1. Provide an example of a distortion-corrected image.
 
-To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
-![alt text][image2]
+First, the camera calibration generated in the previous section was applied to the raw camera image.
+
+<img src="test_images/test1.jpg" width="400"/> <img src="output_images/undist.jpg" width="400"/>
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
