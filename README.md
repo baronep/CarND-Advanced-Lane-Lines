@@ -59,9 +59,13 @@ First, the camera calibration generated in the previous section was applied to t
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
-I used a combination of color and gradient thresholds to generate a binary image (thresholding steps at lines # through # in `another_file.py`).  Here's an example of my output for this step.  (note: this is not actually from one of the test images)
+In order to identify the lane lines, a binary image was generated with the goal of having only the lane lines. Many different combinations of threhsold, color spaces and sobel filters were attempted but the final configuration can be found in first first section of the process() function.
 
-![alt text][image3]
+The final thresholding that I used was: (HLS_L_threshold AND HLS_S_threshold) OR (SOBEL_ABS_threshold AND SOBEL_DIR_thresold)
+
+<img src="output_images/binary.jpg" width="800"/>
+
+While the above image seems suboptimal, the rest of the pipeline was able to fairly robustly extract the lane lines from the images.
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
